@@ -1,0 +1,75 @@
+body {
+  background-image: url(../img/background.jpg);
+  background-color: aqua;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+body #container {
+  width: 1080px;
+  height: 1080px;
+  /* background: silver; */
+  margin: 0px auto;
+}
+body #container #header {
+  /* width: 1080px; */
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  font: bold 20px/40px "fira code";
+  border-style: solid;
+  border-width: thin;
+}
+body #container #header #logo {
+  height: 50px;
+  width: 220px;
+  border-style: solid;
+  border-width: thin;
+}
+body #container #main {
+  height: 960px;
+  /* background: azure; */
+}
+body #container #main #lside {
+  height: 960px;
+  width: 220px;
+  background: rgba(0, 0, 0, 0.3);
+  float: left;
+  border-style: solid;
+  border-width: thin;
+}
+body #container #main #lside #tool {
+  list-style-image: url(../img/tool.png);
+  list-style-type: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+body #container #main #lside #society {
+  list-style-image: url(../img/society.png);
+  list-style-type: none;
+}
+body #container #main #lside #film {
+  list-style-image: url(../img/娱乐.png);
+  list-style-type: none;
+}
+body #container #main #rside {
+  height: 960px;
+  background: rgba(0, 0, 0, 0.3);
+  border-style: solid;
+  border-width: thin;
+}
+body #container #footer {
+  height: 65px;
+  background: rgba(0, 0, 0, 0.3);
+  border-style: solid;
+  border-width: thin;
+}
+a {
+  color: indigo;
+}
+a:hover {
+  color: red;
+}
+li {
+  list-style-type: none;
+}
