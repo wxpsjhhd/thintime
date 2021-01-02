@@ -1,92 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSDC</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-    <div id="container">
-        <div id="header">
-            <div id="logo">
-                <a href="https://www.dton.top/test" style="text-decoration: none;">
-                    <img src="https://th.wallhaven.cc/small/r7/r7zm17.jpg" width="75px" alt="logo">
-                    MSDC
-                </a>
-            </div>
-        </div>
-        <div id="main">
-            <div id="lside">
-                <ul>
-                    <li id="tool">
-                        <a href="index.html#p1" style="text-decoration: none;">工具</a>
-                    </li>
-                    <li id="society">
-                        <a href="index.html#p2" style="text-decoration: none;">社交网站</a>
-                    </li>
-                    <li id="film">
-                        <a href="index.html#p3" style="text-decoration: none;">影视娱乐</a>
-                    </li>
-                    <li>
-                        <a href="index.html#p4" style="text-decoration: none;">工具</a>
-                    </li>
-                    <li>
-                        <a href="index.html#p5" style="text-decoration: none;">工具</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="rside">
-                <a name="p1"></a>
-                <p>1</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br> 
-                <a name="p2"></a>
-                <p>2</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <a name="p3"></a>
-                <p>3</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <a name="p4"></a>
-                <p>4</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <a name="p5"></a>
-                <p>5</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
-        </div>
-        <div id="footer"></div>
-    </div>
-</body>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>jQuery特效百度搜索</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				overflow: hidden;
+			}
+		</style>
+		<link href="css/font.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-search.css" media="screen" type="text/css" />
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script>
+			function c() {
+				location.href = "http://www.baidu.com/s?wd=" + $("#input").val();
+			}
+		</script>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="1280" height="1024"> 您的浏览器不支持canvas标签，请您更换浏览器 </canvas>
+		<script src="js/word.js"></script>
+		<p id="offscreen-text" class="offscreen-text"></p>
+		<p id="text" class="text"></p>
+		<!--<svg id="svg" > </svg>-->
+
+		<div id="d" class="webdesigntuts-workshop"> 
+			<span>
+				<input class="input" id="input" type="search" placeholder="请输入您要搜索的内容" />
+				<button onclick="c();">百度一下</button>
+			</span> 
+		</div>
+
+
+
+		<script src='js/index.js'></script>
+	</body>
 
 </html>
